@@ -1,0 +1,8 @@
+try {
+    int numberOfApplications = Integer.parseInt(input);
+    // код для обробки заявок
+} catch (NumberFormatException e) {
+    System.out.println("Помилка: некоректний формат даних. Введіть число.");
+} catch (Exception e) {
+    System.out.println("Невідома помилка: " + e.getMessage());
+}

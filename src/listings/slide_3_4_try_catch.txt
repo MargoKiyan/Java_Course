@@ -1,0 +1,5 @@
+try {
+    int grade = studentGrades[5]; // спроба отримати 6-й елемент у масиві
+} catch (ArrayIndexOutOfBoundsException e) {
+    System.out.println("Помилка: некоректний індекс масиву.");
+}
