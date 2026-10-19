@@ -1,0 +1,13 @@
+NumericFunc findMinValue = (n) -> {
+   int result = n;
+   for (int i = 1; i <= n; i++) {
+      if (i % 2 == 0) {
+         result = i;
+         break;
+      }
+   }
+   return result;
+};
+
+System.out.println("Найменше парне число 5: " + findMinValue.func(5)); // 2
+System.out.println("Найменше парне число 3: " + findMinValue.func(3)); // 2

@@ -1,0 +1,13 @@
+class Student {
+   private String name;
+   Student(String name) { this.name = name; }
+   boolean hasPassed(int grade) {
+      return grade >= 60;
+   }
+}
+
+Student john = new Student("John");
+IntPredicate passCheck = john::hasPassed;
+
+System.out.println(passCheck.test(65)); // true
+System.out.println(passCheck.test(55)); // false

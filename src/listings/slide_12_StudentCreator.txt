@@ -1,0 +1,13 @@
+interface StudentCreator {
+   Student create(String name);
+}
+
+class Student {
+   private String name;
+   Student(String name) { this.name = name; }
+   String getName() { return name; }
+}
+
+StudentCreator sc = Student::new;
+Student s = sc.create("Ivan");
+System.out.println(s.getName()); // Ivan

@@ -1,0 +1,7 @@
+| Method Reference | Lambda Expression |
+|---|---|
+| `String :: toString` | `s -> s.toString()` |
+| `String :: toLowerCase` | `s -> s.toLowerCase()` |
+| `String :: length` | `s -> s.length()` |
+| `Integer :: compareTo` | `(i1,i2) -> i1.compareTo(i2)` |
+| `String :: compareTo` | `(s1,s2) -> s1.compareTo(s2)` |

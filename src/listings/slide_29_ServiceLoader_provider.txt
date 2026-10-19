@@ -1,0 +1,13 @@
+ServiceLoader<ServiceProvider> ldr = ServiceLoader.load(ServiceProvider.class);
+UniversityService uniService = null;
+
+// Пошук постачальника для calculateAverage
+for(ServiceProvider sp : ldr) {
+    if(sp.get().getName().equals("calculateAverage")) {
+        uniService = sp.get();
+        break;
+    }
+}
+if (uniService != null) {
+    System.out.println("Результат обчислення середнього балу: " + uniService.calculate(90, 75));
+}

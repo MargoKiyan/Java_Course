@@ -1,0 +1,2 @@
+javac -d outDir --module-path modsDir university/studentManager.java
+java --module-path outDir -m university.studentManager/university.Main

@@ -1,0 +1,3 @@
+module university.reflectionModule {
+    opens university.student.records;
+}

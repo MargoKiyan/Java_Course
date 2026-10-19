@@ -1,0 +1,4 @@
+module university.management {
+   requires java.sql;
+   exports com.university.students;
+}

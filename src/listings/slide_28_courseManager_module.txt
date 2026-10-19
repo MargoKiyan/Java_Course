@@ -1,0 +1,4 @@
+module university.courseManager {
+    requires university.studentManager;
+    provides university.registration.CourseProvider with university.courseManager.CourseRegistrationService;
+}

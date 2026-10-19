@@ -1,0 +1,3 @@
+module university.courseManager {
+    requires static university.studentManager;
+}

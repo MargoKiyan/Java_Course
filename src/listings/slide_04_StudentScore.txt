@@ -1,0 +1,6 @@
+// Реалізація функціонального інтерфейсу з лямбда-виразом
+StudentScore studentScore = (grades) -> {
+   int sum = 0;
+   for (int grade : grades) sum += grade;
+   return (double) sum / grades.length;
+};

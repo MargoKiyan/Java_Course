@@ -1,0 +1,5 @@
+// Реалізація лямбда-виразу
+GradeChecker gradeChecker = (grade) -> grade >= 60;
+
+System.out.println(gradeChecker.isPassing(75)); // true
+System.out.println(gradeChecker.isPassing(55)); // false

@@ -1,0 +1,4 @@
+ServiceLoader<TranslationService> loader = ServiceLoader.load(TranslationService.class);
+for (TranslationService service : loader) {
+    service.translate("Hello, world");
+}

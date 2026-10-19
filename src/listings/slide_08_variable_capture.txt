@@ -1,0 +1,8 @@
+int maxStudents = 30;
+MyFunc checkGroupSize = (studentsInGroup) -> {
+   return studentsInGroup <= maxStudents;
+};
+
+// Використання лямбда-виразу
+System.out.println(checkGroupSize.func(25)); // true
+System.out.println(checkGroupSize.func(35)); // false

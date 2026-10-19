@@ -1,0 +1,4 @@
+module university.translation {
+    provides TranslationService with GoogleTranslateService;
+    uses TranslationService;
+}

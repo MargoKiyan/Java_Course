@@ -1,0 +1,3 @@
+module university.courseManager {
+    exports university.courses to university.studentManager;
+}

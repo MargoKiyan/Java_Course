@@ -1,0 +1,5 @@
+String myStr = "Welcome to Edureka!";
+
+MyLambda dis = (chars) -> {
+    return myStr + ":" + new String(chars);
+};

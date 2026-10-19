@@ -1,0 +1,6 @@
+module university.studentManager {
+    requires university.courseManager;
+}
+module university.courseManager {
+    exports university.courses;
+}

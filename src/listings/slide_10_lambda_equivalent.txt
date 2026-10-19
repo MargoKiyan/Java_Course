@@ -1,0 +1,1 @@
+IntPredicate passingPredicate = grade -> StudentUtils.isPassingGrade(grade);

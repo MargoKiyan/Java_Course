@@ -1,0 +1,13 @@
+() -> System.out.println("Hello")
+
+s -> System.out.println(s)
+
+(x, y) -> x + y
+
+(Integer x, Integer y) -> x + y
+
+(x, y) -> {
+    System.out.println(x);
+    System.out.println(y);
+    return (x + y);
+}

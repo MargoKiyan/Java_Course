@@ -1,0 +1,17 @@
+public class LambdaExample {
+    public static void main(String[] args) {
+        // Список студентів
+        List<Student> students = new ArrayList<>();
+        students.add(new Student("Ivan", 85));
+        students.add(new Student("Olga", 92));
+        students.add(new Student("Petro", 88));
+        students.add(new Student("Maria", 95));
+        // Відбір студентів з оцінкою >= 90
+        List<Student> topStudents = students.stream()
+            .filter(student -> student.getGrade() >= 90)
+            .collect(Collectors.toList());
+        // Виведення результатів
+        System.out.println("Студенти з оцінками >= 90:");
+        topStudents.forEach(student -> System.out.println(student.getName()));
+    }
+}

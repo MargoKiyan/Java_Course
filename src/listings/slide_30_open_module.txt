@@ -1,0 +1,3 @@
+open module university.reflectionModule {
+    // Всі пакети в цьому модулі будуть доступні під час виконання
+}

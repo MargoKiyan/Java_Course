@@ -1,0 +1,8 @@
+interface FileAction {
+   boolean processFile(BufferedReader reader) throws IOException;
+}
+
+FileAction fileReader = (reader) -> {
+   int data = reader.read();
+   return data != -1;
+};

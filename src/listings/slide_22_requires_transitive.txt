@@ -1,0 +1,7 @@
+module university.courseManager {
+    requires transitive university.databaseModule;
+}
+
+module university.studentManager {
+    requires university.courseManager;
+}

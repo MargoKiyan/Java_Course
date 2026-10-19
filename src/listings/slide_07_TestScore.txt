@@ -1,0 +1,8 @@
+// Реалізація для цілих чисел
+TestScore<Integer> intTest = (score, threshold) -> score >= threshold;
+
+// Реалізація для дробових чисел
+TestScore<Double> doubleTest = (score, threshold) -> score >= threshold;
+
+System.out.println(intTest.isSatisfactory(85, 60)); // true
+System.out.println(doubleTest.isSatisfactory(72.5, 75.0)); // false

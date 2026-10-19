@@ -1,0 +1,8 @@
+| Ключове слово | Пояснення | Приклад |
+|---|---|---|
+| provides | Оголошує постачальника служби для модуля. | provides TranslationService with GoogleTranslateService; |
+| uses | Вказує, що модулю потрібна служба. | uses TranslationService; |
+| exports | Дозволяє іншим модулям використовувати публічні класи з пакета. | exports com.example.package; |
+| requires | Оголошує залежність модуля від іншого модуля. | requires com.example.module; |
+| opens | Надає доступ до класів пакета для рефлексії. | opens com.example.package to another.module; |
+| module | Оголошує модуль і його залежності. | module com.example.module { ... }; |

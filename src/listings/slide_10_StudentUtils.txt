@@ -1,0 +1,4 @@
+// Статичний метод як посилання
+IntPredicate passingPredicate = StudentUtils::isPassingGrade;
+System.out.println(passingPredicate.test(85)); // true
+System.out.println(passingPredicate.test(55)); // false

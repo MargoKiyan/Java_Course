@@ -1,0 +1,5 @@
+// src/module-info.java
+module hello.world {
+    exports com.example.hello;
+    requires java.base;
+}

@@ -1,0 +1,3 @@
+module university.studentManager {
+    // Модуль автоматично отримує доступ до java.base
+}
