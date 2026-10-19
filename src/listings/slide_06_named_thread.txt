@@ -1,0 +1,3 @@
+Thread thread = new Thread(new MyTask(), "StudentThread");
+thread.start();
+System.out.println("Ім'я потоку: " + thread.getName());

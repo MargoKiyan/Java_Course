@@ -1,0 +1,33 @@
+class MyThread implements Runnable {
+    private boolean suspended = false;
+    private boolean stopped = false;
+    public synchronized void mysuspend() {
+        suspended = true;
+    }
+    public synchronized void myresume() {
+        suspended = false;
+        notify();
+    }
+    public synchronized void mystop() {
+        stopped = true;
+        notify();
+    }
+
+    @Override
+    public void run() {
+        try {
+            for (int i = 1; i < 100; i++) {
+                synchronized (this) {
+                    while (suspended) {
+                        wait();  // Чекає відновлення
+                    }
+                    if (stopped) break;  // Завершення роботи
+                }
+                System.out.print(i + " ");
+                Thread.sleep(250);
+            }
+        } catch (InterruptedException e) {
+            System.out.println("Потік перервано");
+        }
+    }
+}

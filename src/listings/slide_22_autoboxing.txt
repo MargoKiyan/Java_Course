@@ -1,0 +1,5 @@
+// Приклад автопакування
+Character studentGrade = 'A'; // 'char' автоматично упаковується в 'Character'
+
+// Приклад авторозпакування
+char gradeLetter = studentGrade; // 'Character' автоматично розпаковується в 'char'

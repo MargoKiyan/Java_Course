@@ -1,0 +1,3 @@
+MyThread mt1 = MyThread.createAndStart("Thread #1");
+MyThread mt2 = MyThread.createAndStart("Thread #2");
+MyThread mt3 = MyThread.createAndStart("Thread #3");

@@ -1,0 +1,25 @@
+class SyncTask {
+    private int count = 0;
+
+    public synchronized void increment() {
+        count++;
+    }
+
+    public int getCount() {
+        return count;
+    }
+}
+
+class MyThread extends Thread {
+    SyncTask task;
+
+    MyThread(SyncTask task) {
+        this.task = task;
+    }
+
+    public void run() {
+        for (int i = 0; i < 1000; i++) {
+            task.increment();
+        }
+    }
+}

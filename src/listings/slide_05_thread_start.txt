@@ -1,0 +1,2 @@
+Thread thread = new Thread(new Task());
+thread.start();  // Запускає потік

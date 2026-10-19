@@ -1,0 +1,5 @@
+public static MyThread createAndStart(String name) {
+    MyThread myThrd = new MyThread(name);
+    myThrd.thrd.start();
+    return myThrd;
+}

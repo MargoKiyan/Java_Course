@@ -1,0 +1,7 @@
+class Task implements Runnable {
+    public void run() {
+        System.out.println("Запуск нового потоку");
+    }
+}
+Thread thread = new Thread(new Task());
+thread.start();

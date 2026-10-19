@@ -1,0 +1,13 @@
+// Неоптимальне використання автоупаковки
+Double mathA, mathB, mathC;
+
+mathA = 85.7;
+mathB = 92.5;
+mathC = 88.3;
+
+// Автоупаковка додає непотрібні витрати
+Double averageGrade = (mathA + mathB + mathC) / 3;
+
+// Правильний спосіб — використання примітивів
+double finalGrade = (85.7 + 92.5 + 88.3) / 3;
+System.out.println("Середній бал курсу: " + finalGrade);

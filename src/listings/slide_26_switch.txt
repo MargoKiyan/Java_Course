@@ -1,0 +1,7 @@
+Integer gradeLevel = 3;
+switch (gradeLevel) {
+    case 1: System.out.println("Перший курс"); break;
+    case 2: System.out.println("Другий курс"); break;
+    case 3: System.out.println("Третій курс"); break;
+    default: System.out.println("Курс не визначено");
+}

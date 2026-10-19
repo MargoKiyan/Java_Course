@@ -1,0 +1,9 @@
+class StudentThread extends Thread {
+    public void run() {
+        // Логіка обробки запитів
+        System.out.println("Обробка запиту...");
+    }
+}
+
+StudentThread thread = new StudentThread();
+thread.start();

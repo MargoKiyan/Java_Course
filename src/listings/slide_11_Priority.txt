@@ -1,0 +1,8 @@
+Priority mt1 = new Priority("Високий пріоритет");
+Priority mt2 = new Priority("Низький пріоритет");
+
+mt1.thrd.setPriority(Thread.NORM_PRIORITY + 2);
+mt2.thrd.setPriority(Thread.NORM_PRIORITY - 2);
+
+mt1.thrd.start();
+mt2.thrd.start();

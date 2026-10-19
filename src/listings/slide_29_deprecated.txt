@@ -1,0 +1,8 @@
+@Deprecated
+public class OldCourse {
+    // Клас помічений як застарілий
+}
+@Deprecated
+public String getCourseName() {
+    return "Old Java Course";
+}

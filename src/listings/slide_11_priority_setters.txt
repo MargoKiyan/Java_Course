@@ -1,0 +1,2 @@
+mt1.thrd.setPriority(Thread.NORM_PRIORITY + 2); // Високий пріоритет
+mt2.thrd.setPriority(Thread.NORM_PRIORITY - 2); // Низький пріоритет
