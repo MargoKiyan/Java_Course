@@ -1,0 +1,3 @@
+if (obj instanceof Integer i && (i > 0 && i < 10)) {
+    System.out.println("Це ціле число між 1 і 10: " + i);
+}

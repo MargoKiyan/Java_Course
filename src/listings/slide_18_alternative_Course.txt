@@ -1,0 +1,15 @@
+public sealed abstract class Course permits Math, Physics {
+    public abstract void courseDetails();
+}
+
+final class Math extends Course {
+    public void courseDetails() {
+        System.out.println("Це курс з математики.");
+    }
+}
+
+final class Physics extends Course {
+    public void courseDetails() {
+        System.out.println("Це курс з фізики.");
+    }
+}

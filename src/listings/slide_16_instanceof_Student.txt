@@ -1,0 +1,4 @@
+Object obj = new Student("Іван", 12345, 90.5);
+if (obj instanceof Student s) {
+    System.out.println("Студент: " + s.name());
+}

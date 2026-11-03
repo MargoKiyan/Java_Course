@@ -1,0 +1,7 @@
+Object obj = "Java";
+switch (obj) {
+    case Integer i -> System.out.println("Це ціле число: " + i);
+    case String s -> System.out.println("Це рядок: " + s);
+    case null -> System.out.println("Немає значення");
+    default -> System.out.println("Інший тип");
+}

@@ -1,0 +1,9 @@
+String activityType = "лабораторна";
+String assessmentType = switch (activityType) {
+    case "лекція", "семінар" -> "тестування";
+    case "практика", "лабораторна" -> "лабораторна робота";
+    case "курсовий проект" -> "іспит";
+    default -> "інше";
+};
+
+System.out.println("Тип оцінювання: " + assessmentType);

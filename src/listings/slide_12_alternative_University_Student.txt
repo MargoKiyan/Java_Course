@@ -1,0 +1,17 @@
+record Student(String name, int id, double averageGrade) {
+    public Student {
+        if (name == null || name.isBlank()) {
+            throw new IllegalArgumentException("Ім'я не може бути пустим");
+        }
+        if (averageGrade < 0 || averageGrade > 100) {
+            throw new IllegalArgumentException("Бал має бути між 0 і 100");
+        }
+    }
+}
+
+public class University {
+    public static void main(String[] args) {
+        Student student = new Student("Олексій", 12345, 90.5);
+        System.out.println("Ім'я: " + student.name());
+    }
+}

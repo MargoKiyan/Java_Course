@@ -1,0 +1,15 @@
+public sealed interface CourseIF permits Math, Physics {
+    String courseName();
+}
+
+final class Math implements CourseIF {
+    public String courseName() {
+        return "Курс математики";
+    }
+}
+
+final class Physics implements CourseIF {
+    public String courseName() {
+        return "Курс фізики";
+    }
+}

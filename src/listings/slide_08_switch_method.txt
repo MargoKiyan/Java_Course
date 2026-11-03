@@ -1,0 +1,21 @@
+int errorCode = -1;
+boolean normalCompletion = false;
+String message = switch (errorCode) {
+    case -1 -> getErrorMessage();  // Виклик методу для отримання повідомлення про помилку
+    case 0 -> {
+        normalCompletion = true;
+        yield "Завершено без помилок";
+    }
+    case 1 -> "Попередження: необхідна перевірка";
+    default -> "Невідомий стан";
+};
+
+System.out.println("Повідомлення: " + message);
+if (normalCompletion) {
+    System.out.println("Процес завершився успішно.");
+}
+
+// Метод для отримання повідомлення про помилку
+public static String getErrorMessage() {
+    return "Помилка: неправильні дані.";
+}
