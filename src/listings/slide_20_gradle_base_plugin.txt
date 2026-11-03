@@ -1,0 +1,9 @@
+plugins {
+    base
+}
+
+tasks.register("customTask") {
+    doLast {
+        println("Custom task running!")
+    }
+}

@@ -1,0 +1,3 @@
+# Виконання збірки та запуску програми:
+./gradlew build
+java -jar build/libs/university.jar

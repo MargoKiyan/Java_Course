@@ -1,0 +1,5 @@
+tasks.register('customTask') {
+    doLast {
+        println 'This is a custom Gradle task!'
+    }
+}

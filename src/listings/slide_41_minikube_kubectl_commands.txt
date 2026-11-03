@@ -1,0 +1,11 @@
+minikube start
+kubectl get nodes
+
+kubectl get pods
+kubectl describe node
+
+kubectl create deployment myapp --image=myapp:1.0
+kubectl get deployments
+
+kubectl expose deployment myapp --type=NodePort --port=8080
+kubectl port-forward service/myapp 8080:8080

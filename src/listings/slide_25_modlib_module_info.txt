@@ -1,0 +1,4 @@
+// module-info.java
+module com.university.modlib {
+    exports com.university.modlib.visible;
+}

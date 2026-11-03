@@ -1,0 +1,14 @@
+<properties>
+  <kotlin.version>2.4.21</kotlin.version>
+  <maven.compiler.release>25</maven.compiler.release>
+</properties>
+<build>
+  <plugins>
+    <plugin>
+      <groupId>org.jetbrains.kotlin</groupId>
+      <artifactId>kotlin-maven-plugin</artifactId>
+      <version>${kotlin.version}</version>
+      <extensions>true</extensions>
+    </plugin>
+  </plugins>
+</build>

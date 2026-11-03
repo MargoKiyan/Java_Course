@@ -1,0 +1,8 @@
+// build.gradle.kts: плагін java вже підключений
+testing {
+    suites {
+        named<JvmTestSuite>("test") {
+            useJUnitJupiter("6.1.3")
+        }
+    }
+}

@@ -1,0 +1,15 @@
+plugins {
+    kotlin("jvm") version "2.4.21"
+}
+kotlin { jvmToolchain(25) }
+repositories {
+    mavenCentral()
+}
+dependencies {
+    implementation(kotlin("stdlib"))
+}
+tasks.register("hello") {
+    doLast {
+        println("Привіт, це Kotlin у Gradle!")
+    }
+}

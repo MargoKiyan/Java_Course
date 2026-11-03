@@ -1,0 +1,13 @@
+plugins {
+    `java-library`
+    application
+}
+application {
+    mainClass.set("com.university.Main")
+}
+tasks.jar {
+    archiveFileName.set("university.jar")
+    manifest {
+        attributes("Main-Class" to application.mainClass.get())
+    }
+}

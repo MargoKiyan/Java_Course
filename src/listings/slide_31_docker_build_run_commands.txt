@@ -1,0 +1,8 @@
+# Зібрати образ із Dockerfile на JDK 27
+docker build -t hello .
+
+# Перевірити версію Java в образі
+docker run --rm hello java -version
+
+# Запустити головний клас із CMD
+docker run --rm hello

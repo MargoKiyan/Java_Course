@@ -1,0 +1,7 @@
+# Перша повна збірка:
+./gradlew clean build --build-cache
+# Результати зберігаються в кеші
+
+# Повторна збірка з кешуванням:
+./gradlew clean build --build-cache
+# Незмінні кешовані завдання: FROM-CACHE

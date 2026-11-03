@@ -1,0 +1,8 @@
+import org.apache.maven.plugin.AbstractMojo;
+import org.apache.maven.plugins.annotations.Mojo;
+@Mojo(name = "university")
+public class UniversityMojo extends AbstractMojo {
+    public void execute() {
+        getLog().info("Вітаємо з використанням плагіна університету!");
+    }
+}

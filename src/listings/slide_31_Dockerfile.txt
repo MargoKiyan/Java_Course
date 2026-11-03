@@ -1,0 +1,4 @@
+FROM eclipse-temurin:27-jdk
+COPY HelloDocker.java .
+RUN javac HelloDocker.java
+CMD ["java", "HelloDocker"]

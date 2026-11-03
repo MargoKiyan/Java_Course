@@ -1,0 +1,7 @@
+sourceSets {
+    main {
+        java {
+            setSrcDirs(listOf("src/com.university.modlib/java"))
+        }
+    }
+}

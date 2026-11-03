@@ -1,0 +1,26 @@
+<plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-compiler-plugin</artifactId>
+  <version>3.16.0</version>
+  <configuration><release>25</release></configuration>
+  <executions>
+    <execution>
+      <id>compile-java-27</id>
+      <goals><goal>compile</goal></goals>
+      <configuration>
+        <release>27</release>
+        <compileSourceRoots>
+          <compileSourceRoot>
+            ${project.basedir}/src/main/java27
+          </compileSourceRoot>
+        </compileSourceRoots>
+        <multiReleaseOutput>true</multiReleaseOutput>
+      </configuration>
+    </execution>
+  </executions>
+</plugin>
+<plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-jar-plugin</artifactId>
+  <version>3.5.1</version>
+</plugin>

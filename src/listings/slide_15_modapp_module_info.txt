@@ -1,0 +1,3 @@
+module com.university.modapp {
+    requires com.university.modlib;
+}

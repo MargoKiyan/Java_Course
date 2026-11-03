@@ -1,0 +1,10 @@
+FROM eclipse-temurin:27-jdk AS build
+WORKDIR /project
+COPY . .
+RUN chmod +x gradlew && \
+    ./gradlew --no-daemon clean installDist
+
+FROM eclipse-temurin:27-jre
+WORKDIR /opt/app
+COPY --from=build /project/build/install/docker-gradle-multi /opt/app
+CMD ["/opt/app/bin/docker-gradle-multi"]

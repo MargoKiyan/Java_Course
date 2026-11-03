@@ -1,0 +1,8 @@
+# Запуск інтерактивної сесії з контейнером
+docker exec -it hello-container bash
+
+# Віддалена налагоджувальна сесія для JVM
+docker run --rm \
+  -p 127.0.0.1:8090:8090 \
+  -e "JAVA_TOOL_OPTIONS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:8090" \
+  hello

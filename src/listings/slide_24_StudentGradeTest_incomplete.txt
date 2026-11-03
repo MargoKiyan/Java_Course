@@ -1,0 +1,13 @@
+// src/test/java/com/university/StudentGradeTest.java
+package com.university;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+class StudentGradeTest {
+    @Test void testCalculateGPA() {
+        Student student = new Student();
+        student.addGrade(90);
+        student.addGrade(85);
+        double gpa = student.calculateGPA();
+        assertEquals(87.5, gpa, 1e-9);
+    }
+}

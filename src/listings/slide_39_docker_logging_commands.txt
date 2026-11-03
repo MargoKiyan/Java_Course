@@ -1,0 +1,6 @@
+# Застосунок пише журнали у stdout / stderr
+docker run -d --name hello-container hello
+# Перегляд журналу, зокрема після завершення
+docker logs -f hello-container
+# Копія файлового журналу, якщо його створює додаток
+docker cp hello-container:/log/application.log .

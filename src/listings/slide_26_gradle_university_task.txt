@@ -1,0 +1,6 @@
+tasks.register("universityTask") {
+    println("Налаштовуємо завдання для проєкту...")
+    doLast {
+        println("Вітаємо від Gradle та університету!")
+    }
+}
