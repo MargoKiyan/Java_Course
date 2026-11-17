@@ -1,0 +1,6 @@
+val seq = sequenceOf(1, 2, 3)
+val result = seq
+    .map { println("1e $it"); it.toString() }
+    .map { println("2e $it"); it + it }
+    .map { println("3e $it"); it.toInt() }
+val values = result.toList()

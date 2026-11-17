@@ -1,0 +1,7 @@
+CompletableFuture<Integer> future = CompletableFuture.supplyAsync(() -> {
+    return 42;
+}).thenApply(x -> x + 1);
+
+CompletableFuture<Integer> future2 = CompletableFuture.supplyAsync(() -> 100);
+Runnable action = () -> System.out.println("Один з CompletableFuture завершився");
+future.runAfterEither(future2, action).join();

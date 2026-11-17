@@ -1,0 +1,2 @@
+; EXECUTION_SCAFFOLD: exact version from lecture 12.
+{:deps {org.clojure/clojure {:mvn/version "1.12.6"}}}

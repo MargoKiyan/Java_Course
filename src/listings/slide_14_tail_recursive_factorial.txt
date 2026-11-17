@@ -1,0 +1,10 @@
+public static long tailrecFactorial(long n) {
+    return helpFact(n, 1);
+}
+
+private static long helpFact(long i, long j) {
+    if (i == 0) {
+        return j;
+    }
+    return helpFact(i - 1, i * j);
+}

@@ -1,0 +1,3 @@
+List<Integer> numbers = List.of(1, 2, 3);
+List<Integer> updatedNumbers = Stream.concat(
+    numbers.stream(), Stream.of(4)).toList();

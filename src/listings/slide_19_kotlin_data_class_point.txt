@@ -1,0 +1,5 @@
+data class Point(val x: Int, val y: Int)
+
+val point = Point(10, 20)
+val newPoint = point.copy(x = 100)
+println(newPoint)  // Виведе: Point(x=100, y=20)

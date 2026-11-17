@@ -1,0 +1,19 @@
+public final class Deposit implements Comparable<Deposit> {
+    private final double amount;
+    private final LocalDate date;
+    private final Account payee;
+
+    public Deposit(double amount, LocalDate date, Account payee) {
+        this.amount = amount;
+        this.date = date;
+        this.payee = payee;
+    }
+
+    @Override
+    public int compareTo(Deposit other) {
+        return Comparator.comparing(Deposit::getDate)
+                         .compare(this, other);
+    }
+
+    public LocalDate getDate() { return date; }
+}

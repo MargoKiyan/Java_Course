@@ -1,0 +1,6 @@
+val seq = sequenceOf(1, 2, 3)
+val result = seq
+    .map { it.toString() }
+    .map { it + it }
+    .map { it.toInt() }
+    .toList()

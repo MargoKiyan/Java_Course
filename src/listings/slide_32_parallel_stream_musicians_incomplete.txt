@@ -1,0 +1,6 @@
+List<String> origins2;
+try (var pool = new ForkJoinPool(4)) {
+    origins2 = pool.submit(() -> musicians.parallelStream()
+        .filter(a -> a.getName().startsWith("The"))
+        .map(a -> a.getNationality()).toList()).get();
+}

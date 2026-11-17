@@ -1,0 +1,3 @@
+val compose = { a: Int, b: Int -> a * 2 + b }
+
+val result = compose(5, 10)  // Результат: 20

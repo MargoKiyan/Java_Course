@@ -1,0 +1,6 @@
+BiFunction<Integer, LocalDate, String> bif =
+    (i, d) -> "Лічильник для " + d + ": " + i;
+Function<LocalDate, String> withCount =
+    d -> bif.apply(42, d);
+LocalDate today = LocalDate.now();
+Function<Integer, String> forToday = i -> bif.apply(i, today);

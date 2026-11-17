@@ -1,0 +1,5 @@
+Function<String, Function<String, String>> prefixer = 
+    prefix -> s -> prefix + ": " + s;
+
+Function<String, String> addUniversityPrefix = prefixer.apply("Університет");
+System.out.println(addUniversityPrefix.apply("Програмування"));

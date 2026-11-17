@@ -1,0 +1,9 @@
+public static Function<Integer, Integer> closure() {
+    var universityYear = new AtomicInteger(2024);
+    return i -> universityYear.addAndGet(i);
+}
+
+public static void main(String[] args) {
+    Function<Integer, Integer> incrementYear = closure();
+    System.out.println("Наступний рік навчання: " + incrementYear.apply(1));  // 2025
+}

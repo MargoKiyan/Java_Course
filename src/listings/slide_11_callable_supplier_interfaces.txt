@@ -1,0 +1,9 @@
+@FunctionalInterface
+public interface Callable<V> {
+    V call() throws Exception;
+}
+
+@FunctionalInterface
+public interface Supplier<T> {
+    T get();
+}
