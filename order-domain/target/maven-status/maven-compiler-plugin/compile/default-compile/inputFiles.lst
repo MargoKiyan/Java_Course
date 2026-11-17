@@ -1,0 +1,9 @@
+/Users/margokyian/IdeaProjects/pr4_Kyian/order-domain/src/main/java/com/kyian/orders/domain/Clothing.java
+/Users/margokyian/IdeaProjects/pr4_Kyian/order-domain/src/main/java/com/kyian/orders/domain/Electronics.java
+/Users/margokyian/IdeaProjects/pr4_Kyian/order-domain/src/main/java/com/kyian/orders/domain/InvalidOrderException.java
+/Users/margokyian/IdeaProjects/pr4_Kyian/order-domain/src/main/java/com/kyian/orders/domain/InvalidProductException.java
+/Users/margokyian/IdeaProjects/pr4_Kyian/order-domain/src/main/java/com/kyian/orders/domain/Order.java
+/Users/margokyian/IdeaProjects/pr4_Kyian/order-domain/src/main/java/com/kyian/orders/domain/OrderStatus.java
+/Users/margokyian/IdeaProjects/pr4_Kyian/order-domain/src/main/java/com/kyian/orders/domain/Product.java
+/Users/margokyian/IdeaProjects/pr4_Kyian/order-domain/src/main/java/com/kyian/orders/domain/internal/ProductValidation.java
+/Users/margokyian/IdeaProjects/pr4_Kyian/order-domain/src/main/java/module-info.java

@@ -1,0 +1,11 @@
+com/kyian/orders/domain/Order.class
+module-info.class
+com/kyian/orders/domain/Electronics$ElectronicsBuilder.class
+com/kyian/orders/domain/internal/ProductValidation.class
+com/kyian/orders/domain/InvalidProductException.class
+com/kyian/orders/domain/Product.class
+com/kyian/orders/domain/Electronics.class
+com/kyian/orders/domain/Clothing$ClothingBuilder.class
+com/kyian/orders/domain/InvalidOrderException.class
+com/kyian/orders/domain/Clothing.class
+com/kyian/orders/domain/OrderStatus.class
