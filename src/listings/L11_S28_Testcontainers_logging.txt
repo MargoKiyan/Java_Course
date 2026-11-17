@@ -1,0 +1,11 @@
+public static ToStringConsumer consumer = new ToStringConsumer();
+@BeforeAll
+public static void setUp() {
+redis.followOutput(consumer, OutputType.STDOUT, OutputType.STDERR);
+}
+@AfterAll
+public static void tearDown() throws IOException {
+Path log = Path.of("build", "tc.log");
+Files.createDirectories(log.getParent());
+Files.writeString(log, consumer.toUtf8String(), StandardCharsets.UTF_8);
+}

@@ -1,0 +1,17 @@
+class RevenueCalculatorExtension
+implements BeforeEachCallback, AfterEachCallback {
+private final RevenueCalculator calculator;
+RevenueCalculatorExtension(RevenueCalculator calculator) {
+this.calculator = calculator;
+}
+RevenueCalculator calculator() { return calculator; }
+@Override
+public void beforeEach(ExtensionContext context) {
+calculator.reset();
+calculator.start();
+}
+@Override
+public void afterEach(ExtensionContext context) {
+calculator.stop();
+}
+}

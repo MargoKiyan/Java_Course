@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: TicketRevenueTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.035 s <<< FAILURE! -- in TicketRevenueTest
+TicketRevenueTest.failIfLessThanZeroTicketsAreSold -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3234)
+	at TicketRevenueTest.failIfLessThanZeroTicketsAreSold(TicketRevenueTest.java:14)
+
+TicketRevenueTest.failIfMoreThanHundredTicketsAreSold -- Time elapsed: 0.001 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3234)
+	at TicketRevenueTest.failIfMoreThanHundredTicketsAreSold(TicketRevenueTest.java:28)
+

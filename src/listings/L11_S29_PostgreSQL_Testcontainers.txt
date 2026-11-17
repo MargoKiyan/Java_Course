@@ -1,0 +1,13 @@
+@Container static PostgreSQLContainer postgres =
+new PostgreSQLContainer("postgres:18")
+.withDatabaseName("theater_db")
+.withUsername("theater")
+.withPassword("password")
+.withInitScript("init.sql");
+@Test void databaseIsReady() throws SQLException {
+try (var conn = DriverManager.getConnection(
+postgres.getJdbcUrl(), postgres.getUsername(),
+postgres.getPassword())) {
+assertTrue(conn.isValid(2));
+}
+}

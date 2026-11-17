@@ -1,0 +1,6 @@
+int calculateRevenue(int ticketsSold) {
+if (ticketsSold < 0 || ticketsSold > 200) {
+throw new IllegalArgumentException("Невірна кількість квитків");
+}
+return 50 * ticketsSold;
+}

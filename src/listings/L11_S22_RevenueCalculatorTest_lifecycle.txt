@@ -1,0 +1,21 @@
+public class RevenueCalculatorTest {
+static RevenueCalculator calculator;
+@BeforeAll
+static void init() {
+calculator = new RevenueCalculator();
+}
+@BeforeEach
+void resetCalculator() {
+calculator.reset();
+}
+@Test
+void testCalculateRevenue() {
+TicketRevenue ticket = new TicketRevenue(10, 20);
+assertEquals(200, calculator.calculate(ticket));
+}
+@AfterAll
+static void cleanup() {
+// Perform necessary cleanup after all tests
+calculator = null;
+}
+}

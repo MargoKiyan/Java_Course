@@ -1,0 +1,5 @@
+public class TicketRevenue {
+public BigDecimal estimateTotalRevenue(int i) {
+return BigDecimal.ZERO;
+}
+}

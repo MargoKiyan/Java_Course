@@ -1,0 +1,8 @@
+public class TicketRevenueTest {
+@Test
+public void oneTicketSoldIsFiftyInRevenue() {
+TicketRevenue venueRevenue = new TicketRevenue();
+var expectedRevenue = new BigDecimal("50");
+assertEquals(expectedRevenue, venueRevenue.estimateTotalRevenue(1));
+}
+}

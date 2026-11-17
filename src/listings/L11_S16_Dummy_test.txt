@@ -1,0 +1,6 @@
+@Test
+public void tenPercentDiscount() {
+String dummyName = "Вася";
+Ticket ticket = new Ticket(dummyName, new BigDecimal("10"));
+assertEquals(new BigDecimal("9.0"), ticket.getDiscountPrice());
+}

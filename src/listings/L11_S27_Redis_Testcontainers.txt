@@ -1,0 +1,10 @@
+@Container static GenericContainer<?> redis =
+new GenericContainer<>("redis:8.10.3-alpine")
+.withExposedPorts(6379);
+@Test void cached() {
+try (var client = RedisClient.create(redis.getHost(),
+redis.getMappedPort(6379))) {
+client.set("price", "20");
+assertEquals("20", client.get("price"));
+}
+}

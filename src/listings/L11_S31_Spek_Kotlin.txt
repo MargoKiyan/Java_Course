@@ -1,0 +1,18 @@
+object InMemoryCachedPriceSpek : Spek({
+group("пустий кеш") {
+lateinit var stubbedPrice: Price
+lateinit var cachedPrice: InMemoryCachedPrice
+beforeEachTest {
+stubbedPrice = StubPrice()
+cachedPrice = InMemoryCachedPrice(stubbedPrice)
+}
+test("отримує значення за замовчуванням") {
+assertEquals(BigDecimal(10), cachedPrice.initialPrice)
+}
+test("отримує те ж значення при повторному виклику") {
+val first = cachedPrice.initialPrice
+val second = cachedPrice.initialPrice
+assertTrue(first === second)
+}
+}
+})

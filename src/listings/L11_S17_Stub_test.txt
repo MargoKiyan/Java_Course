@@ -1,0 +1,6 @@
+@Test
+public void tenPercentDiscount() {
+Price price = new StubPrice(); // Заглушка, що повертає стабільну ціну
+Ticket ticket = new Ticket(price);
+assertEquals(new BigDecimal("9.0"), ticket.getDiscountPrice());
+}

@@ -1,0 +1,13 @@
+package com.university.system;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+public class RevenueCalculatorTest {
+static RevenueCalculator calculator = new
+RevenueCalculator();
+@Test
+public void nullThrows() {
+assertThrows(IllegalArgumentException.class, () -> {
+calculator.calculate(null);
+});
+}
+}
